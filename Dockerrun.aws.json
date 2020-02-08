@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "myfirsttraviscontainer",
+      "image": "sirvineyard/firsttravis:latest",
+      "memory": 200,
+      "essential": true,
+	  "portMappings": [
+	    {
+	      "containerPort": 80,
+	      "hostPort": 80
+	    }
+	  ]
+    }
+   ]
+}
